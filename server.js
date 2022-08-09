@@ -20,7 +20,9 @@ app.engine('jsx', require('express-react-views').createEngine())
 
 // ROUTES
 app.get('/', (req, res) => {
-  res.send('Welcome to an awesome App about Breads')
+  // res.send('Welcome to an awesome App about Breads')
+  res.redirect('/breads')
+  console.log('Welcome to an awesome App about Breads')
   
 })
 
