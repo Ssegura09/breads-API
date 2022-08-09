@@ -19,7 +19,7 @@ app.set('view engine', 'jsx')
 app.engine('jsx', require('express-react-views').createEngine())
 
 // ROUTES
-app.get('/', (req, res) => {
+app.get('/breads', (req, res) => {
   res.send('Welcome to an awesome App about Breads')
 })
 
